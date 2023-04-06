@@ -1,0 +1,215 @@
+ERROR - 2023-04-06 13:47:03 --> Error connecting to the database: mysqli_sql_exception: No such file or directory in /home/flac/Documents/apteka/back/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:174
+Stack trace:
+#0 /home/flac/Documents/apteka/back/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(174): mysqli->real_connect()
+#1 /home/flac/Documents/apteka/back/vendor/codeigniter4/framework/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 /home/flac/Documents/apteka/back/vendor/codeigniter4/framework/system/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#3 /home/flac/Documents/apteka/back/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#4 /home/flac/Documents/apteka/back/vendor/codeigniter4/framework/system/Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/flac/Documents/apteka/back/vendor/codeigniter4/framework/system/BaseModel.php(618): CodeIgniter\Model->doFindAll()
+#6 /home/flac/Documents/apteka/back/app/Controllers/Categories.php(25): CodeIgniter\BaseModel->findAll()
+#7 /home/flac/Documents/apteka/back/vendor/codeigniter4/framework/system/CodeIgniter.php(934): App\Controllers\Categories->index()
+#8 /home/flac/Documents/apteka/back/vendor/codeigniter4/framework/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#9 /home/flac/Documents/apteka/back/vendor/codeigniter4/framework/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#10 /home/flac/Documents/apteka/back/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 /home/flac/Documents/apteka/back/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(47): require_once('...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No such file or directory in /home/flac/Documents/apteka/back/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:218
+Stack trace:
+#0 /home/flac/Documents/apteka/back/vendor/codeigniter4/framework/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 /home/flac/Documents/apteka/back/vendor/codeigniter4/framework/system/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home/flac/Documents/apteka/back/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#3 /home/flac/Documents/apteka/back/vendor/codeigniter4/framework/system/Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#4 /home/flac/Documents/apteka/back/vendor/codeigniter4/framework/system/BaseModel.php(618): CodeIgniter\Model->doFindAll()
+#5 /home/flac/Documents/apteka/back/app/Controllers/Categories.php(25): CodeIgniter\BaseModel->findAll()
+#6 /home/flac/Documents/apteka/back/vendor/codeigniter4/framework/system/CodeIgniter.php(934): App\Controllers\Categories->index()
+#7 /home/flac/Documents/apteka/back/vendor/codeigniter4/framework/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#8 /home/flac/Documents/apteka/back/vendor/codeigniter4/framework/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#9 /home/flac/Documents/apteka/back/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 /home/flac/Documents/apteka/back/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(47): require_once('...')
+#11 {main}
+CRITICAL - 2023-04-06 13:47:03 --> Unable to connect to the database.
+Main connection [MySQLi]: No such file or directory
+in SYSTEMPATH/Database/BaseConnection.php on line 427.
+ 1 SYSTEMPATH/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 3 SYSTEMPATH/Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(618): CodeIgniter\Model->doFindAll()
+ 5 APPPATH/Controllers/Categories.php(25): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Categories->index()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('FCPATH/index.php')
+ERROR - 2023-04-06 14:29:52 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: YES) in /home/flac/Documents/apteka/back/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:174
+Stack trace:
+#0 /home/flac/Documents/apteka/back/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(174): mysqli->real_connect()
+#1 /home/flac/Documents/apteka/back/vendor/codeigniter4/framework/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 /home/flac/Documents/apteka/back/vendor/codeigniter4/framework/system/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#3 /home/flac/Documents/apteka/back/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#4 /home/flac/Documents/apteka/back/vendor/codeigniter4/framework/system/Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/flac/Documents/apteka/back/vendor/codeigniter4/framework/system/BaseModel.php(618): CodeIgniter\Model->doFindAll()
+#6 /home/flac/Documents/apteka/back/app/Controllers/Categories.php(25): CodeIgniter\BaseModel->findAll()
+#7 /home/flac/Documents/apteka/back/vendor/codeigniter4/framework/system/CodeIgniter.php(934): App\Controllers\Categories->index()
+#8 /home/flac/Documents/apteka/back/vendor/codeigniter4/framework/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#9 /home/flac/Documents/apteka/back/vendor/codeigniter4/framework/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#10 /home/flac/Documents/apteka/back/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 /home/flac/Documents/apteka/back/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(47): require_once('...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: YES) in /home/flac/Documents/apteka/back/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:218
+Stack trace:
+#0 /home/flac/Documents/apteka/back/vendor/codeigniter4/framework/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 /home/flac/Documents/apteka/back/vendor/codeigniter4/framework/system/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home/flac/Documents/apteka/back/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#3 /home/flac/Documents/apteka/back/vendor/codeigniter4/framework/system/Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#4 /home/flac/Documents/apteka/back/vendor/codeigniter4/framework/system/BaseModel.php(618): CodeIgniter\Model->doFindAll()
+#5 /home/flac/Documents/apteka/back/app/Controllers/Categories.php(25): CodeIgniter\BaseModel->findAll()
+#6 /home/flac/Documents/apteka/back/vendor/codeigniter4/framework/system/CodeIgniter.php(934): App\Controllers\Categories->index()
+#7 /home/flac/Documents/apteka/back/vendor/codeigniter4/framework/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#8 /home/flac/Documents/apteka/back/vendor/codeigniter4/framework/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#9 /home/flac/Documents/apteka/back/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 /home/flac/Documents/apteka/back/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(47): require_once('...')
+#11 {main}
+CRITICAL - 2023-04-06 14:29:52 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+in SYSTEMPATH/Database/BaseConnection.php on line 427.
+ 1 SYSTEMPATH/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 3 SYSTEMPATH/Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(618): CodeIgniter\Model->doFindAll()
+ 5 APPPATH/Controllers/Categories.php(25): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Categories->index()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('FCPATH/index.php')
+ERROR - 2023-04-06 14:29:55 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: YES) in /home/flac/Documents/apteka/back/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:174
+Stack trace:
+#0 /home/flac/Documents/apteka/back/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(174): mysqli->real_connect()
+#1 /home/flac/Documents/apteka/back/vendor/codeigniter4/framework/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 /home/flac/Documents/apteka/back/vendor/codeigniter4/framework/system/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#3 /home/flac/Documents/apteka/back/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#4 /home/flac/Documents/apteka/back/vendor/codeigniter4/framework/system/Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/flac/Documents/apteka/back/vendor/codeigniter4/framework/system/BaseModel.php(618): CodeIgniter\Model->doFindAll()
+#6 /home/flac/Documents/apteka/back/app/Controllers/Categories.php(25): CodeIgniter\BaseModel->findAll()
+#7 /home/flac/Documents/apteka/back/vendor/codeigniter4/framework/system/CodeIgniter.php(934): App\Controllers\Categories->index()
+#8 /home/flac/Documents/apteka/back/vendor/codeigniter4/framework/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#9 /home/flac/Documents/apteka/back/vendor/codeigniter4/framework/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#10 /home/flac/Documents/apteka/back/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 /home/flac/Documents/apteka/back/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(47): require_once('...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: YES) in /home/flac/Documents/apteka/back/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:218
+Stack trace:
+#0 /home/flac/Documents/apteka/back/vendor/codeigniter4/framework/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 /home/flac/Documents/apteka/back/vendor/codeigniter4/framework/system/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home/flac/Documents/apteka/back/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#3 /home/flac/Documents/apteka/back/vendor/codeigniter4/framework/system/Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#4 /home/flac/Documents/apteka/back/vendor/codeigniter4/framework/system/BaseModel.php(618): CodeIgniter\Model->doFindAll()
+#5 /home/flac/Documents/apteka/back/app/Controllers/Categories.php(25): CodeIgniter\BaseModel->findAll()
+#6 /home/flac/Documents/apteka/back/vendor/codeigniter4/framework/system/CodeIgniter.php(934): App\Controllers\Categories->index()
+#7 /home/flac/Documents/apteka/back/vendor/codeigniter4/framework/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#8 /home/flac/Documents/apteka/back/vendor/codeigniter4/framework/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#9 /home/flac/Documents/apteka/back/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 /home/flac/Documents/apteka/back/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(47): require_once('...')
+#11 {main}
+CRITICAL - 2023-04-06 14:29:55 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+in SYSTEMPATH/Database/BaseConnection.php on line 427.
+ 1 SYSTEMPATH/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 3 SYSTEMPATH/Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(618): CodeIgniter\Model->doFindAll()
+ 5 APPPATH/Controllers/Categories.php(25): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Categories->index()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('FCPATH/index.php')
+ERROR - 2023-04-06 15:42:21 --> mysqli_sql_exception: Column 'name' cannot be null in /home/flac/Documents/apteka/back/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /home/flac/Documents/apteka/back/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /home/flac/Documents/apteka/back/vendor/codeigniter4/framework/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/flac/Documents/apteka/back/vendor/codeigniter4/framework/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/flac/Documents/apteka/back/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query()
+#4 /home/flac/Documents/apteka/back/vendor/codeigniter4/framework/system/Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 /home/flac/Documents/apteka/back/vendor/codeigniter4/framework/system/BaseModel.php(782): CodeIgniter\Model->doInsert()
+#6 /home/flac/Documents/apteka/back/vendor/codeigniter4/framework/system/Model.php(730): CodeIgniter\BaseModel->insert()
+#7 /home/flac/Documents/apteka/back/vendor/codeigniter4/framework/system/BaseModel.php(692): CodeIgniter\Model->insert()
+#8 /home/flac/Documents/apteka/back/app/Controllers/Products.php(144): CodeIgniter\BaseModel->save()
+#9 /home/flac/Documents/apteka/back/vendor/codeigniter4/framework/system/CodeIgniter.php(934): App\Controllers\Products->create()
+#10 /home/flac/Documents/apteka/back/vendor/codeigniter4/framework/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#11 /home/flac/Documents/apteka/back/vendor/codeigniter4/framework/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#12 /home/flac/Documents/apteka/back/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#13 /home/flac/Documents/apteka/back/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(47): require_once('...')
+#14 {main}
+CRITICAL - 2023-04-06 15:42:21 --> Column 'name' cannot be null
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH/Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH/BaseModel.php(782): CodeIgniter\Model->doInsert()
+ 4 SYSTEMPATH/Model.php(730): CodeIgniter\BaseModel->insert()
+ 5 SYSTEMPATH/BaseModel.php(692): CodeIgniter\Model->insert()
+ 6 APPPATH/Controllers/Products.php(144): CodeIgniter\BaseModel->save()
+ 7 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Products->create()
+ 8 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('FCPATH/index.php')
+ERROR - 2023-04-06 15:42:40 --> mysqli_sql_exception: Column 'name' cannot be null in /home/flac/Documents/apteka/back/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /home/flac/Documents/apteka/back/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /home/flac/Documents/apteka/back/vendor/codeigniter4/framework/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/flac/Documents/apteka/back/vendor/codeigniter4/framework/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/flac/Documents/apteka/back/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query()
+#4 /home/flac/Documents/apteka/back/vendor/codeigniter4/framework/system/Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 /home/flac/Documents/apteka/back/vendor/codeigniter4/framework/system/BaseModel.php(782): CodeIgniter\Model->doInsert()
+#6 /home/flac/Documents/apteka/back/vendor/codeigniter4/framework/system/Model.php(730): CodeIgniter\BaseModel->insert()
+#7 /home/flac/Documents/apteka/back/vendor/codeigniter4/framework/system/BaseModel.php(692): CodeIgniter\Model->insert()
+#8 /home/flac/Documents/apteka/back/app/Controllers/Products.php(144): CodeIgniter\BaseModel->save()
+#9 /home/flac/Documents/apteka/back/vendor/codeigniter4/framework/system/CodeIgniter.php(934): App\Controllers\Products->create()
+#10 /home/flac/Documents/apteka/back/vendor/codeigniter4/framework/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#11 /home/flac/Documents/apteka/back/vendor/codeigniter4/framework/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#12 /home/flac/Documents/apteka/back/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#13 /home/flac/Documents/apteka/back/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(47): require_once('...')
+#14 {main}
+CRITICAL - 2023-04-06 15:42:40 --> Column 'name' cannot be null
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH/Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH/BaseModel.php(782): CodeIgniter\Model->doInsert()
+ 4 SYSTEMPATH/Model.php(730): CodeIgniter\BaseModel->insert()
+ 5 SYSTEMPATH/BaseModel.php(692): CodeIgniter\Model->insert()
+ 6 APPPATH/Controllers/Products.php(144): CodeIgniter\BaseModel->save()
+ 7 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Products->create()
+ 8 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('FCPATH/index.php')
+ERROR - 2023-04-06 17:05:40 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`apteka`.`subCategory`, CONSTRAINT `subCategory_ibfk_1` FOREIGN KEY (`idCategory`) REFERENCES `category` (`idCategory`)) in /home/flac/Documents/apteka/back/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /home/flac/Documents/apteka/back/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /home/flac/Documents/apteka/back/vendor/codeigniter4/framework/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/flac/Documents/apteka/back/vendor/codeigniter4/framework/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/flac/Documents/apteka/back/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(2791): CodeIgniter\Database\BaseConnection->query()
+#4 /home/flac/Documents/apteka/back/vendor/codeigniter4/framework/system/Model.php(456): CodeIgniter\Database\BaseBuilder->delete()
+#5 /home/flac/Documents/apteka/back/vendor/codeigniter4/framework/system/BaseModel.php(1065): CodeIgniter\Model->doDelete()
+#6 /home/flac/Documents/apteka/back/app/Controllers/Categories.php(83): CodeIgniter\BaseModel->delete()
+#7 /home/flac/Documents/apteka/back/vendor/codeigniter4/framework/system/CodeIgniter.php(934): App\Controllers\Categories->delete()
+#8 /home/flac/Documents/apteka/back/vendor/codeigniter4/framework/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#9 /home/flac/Documents/apteka/back/vendor/codeigniter4/framework/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#10 /home/flac/Documents/apteka/back/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 /home/flac/Documents/apteka/back/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(47): require_once('...')
+#12 {main}
+CRITICAL - 2023-04-06 17:05:40 --> Cannot delete or update a parent row: a foreign key constraint fails (`apteka`.`subCategory`, CONSTRAINT `subCategory_ibfk_1` FOREIGN KEY (`idCategory`) REFERENCES `category` (`idCategory`))
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2791): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH/Model.php(456): CodeIgniter\Database\BaseBuilder->delete()
+ 3 SYSTEMPATH/BaseModel.php(1065): CodeIgniter\Model->doDelete()
+ 4 APPPATH/Controllers/Categories.php(83): CodeIgniter\BaseModel->delete()
+ 5 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Categories->delete()
+ 6 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('FCPATH/index.php')
